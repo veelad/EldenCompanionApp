@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Companion | Master the Lands Between</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="glow-orb top-right"></div>
+        <div class="glow-orb bottom-left"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Main Split-Screen Dashboard Layout -->
+    <main class="dashboard-layout">
+        
+        <!-- Left Sidebar: Fixed Info Panel -->
+        <aside class="dashboard-sidebar fade-in-up">
+            <div class="sidebar-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <i data-lucide="crown" class="logo-icon"></i>
+                    <span>Elden Companion</span>
+                </div>
+
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <div class="subtitle"><i data-lucide="sparkles"></i> Abyssal Vault Edition</div>
+                    <h1>Master the <br><span class="text-gold">Lands Between</span></h1>
+                    <p>The ultimate companion for your journey. Track every boss, uncover hidden lore, discover the perfect build, and never miss an item.</p>
+                </div>
+
+                <!-- Gallery Navigation (Desktop only) -->
+                <div class="gallery-nav">
+                    <span>Explore Features</span>
+                    <div class="nav-buttons">
+                        <button class="nav-arrow" id="scroll-left" aria-label="Scroll Left"><i data-lucide="chevron-left"></i></button>
+                        <button class="nav-arrow" id="scroll-right" aria-label="Scroll Right"><i data-lucide="chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Download Buttons -->
+                <div class="cta-container">
+                    <div class="store-buttons">
+                        <a class="store-btn" href="https://apps.apple.com/us/app/elden-companion/id6762853092" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="apple"></i>
+                            <div class="store-text">
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.eldenringcompanion.app" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="play"></i>
+                            <div class="store-text">
+                                <span>GET IT ON</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Footer Info -->
+                <div class="footer-mini">
+                    &copy; 2026 Elden Companion App.<br>Not affiliated with FromSoftware.
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Stage: Scrollable Media -->
+        <section class="dashboard-stage fade-in-up" style="animation-delay: 0.2s;">
+            <div class="stage-scroll-container" id="gallery-container">
+                
+                <!-- 1. Video (First thing they see) -->
+                <div class="stage-card">
+                    <div class="phone-frame">
+                        <video src="assets/demo.mp4" autoplay loop muted playsinline class="full-length-media"></video>
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>See it in Action</h3>
+                        <p>Fluid, glassmorphic UI</p>
+                    </div>
+                </div>
+
+                <!-- 2. Dashboard -->
+                <div class="stage-card">
+                    <div class="phone-frame">
+                        <img src="assets/screenshot_1.jpg" alt="Dashboard" class="full-length-media">
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>Dashboard</h3>
+                        <p>Dynamic Orbital UI</p>
+                    </div>
+                </div>
+
+                <!-- 3. Boss Tracking -->
+                <div class="stage-card">
+                    <div class="phone-frame">
+                        <img src="assets/screenshot_2.jpg" alt="Boss Tracking" class="full-length-media">
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>Bosses</h3>
+                        <p>Track your victories</p>
+                    </div>
+                </div>
+
+                <!-- 4. World Map -->
+                <div class="stage-card">
+                    <div class="phone-frame">
+                        <img src="assets/screenshot_3.jpg" alt="World Map" class="full-length-media">
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>World</h3>
+                        <p>Navigate the realm</p>
+                    </div>
+                </div>
+
+                <!-- 5. Arsenal -->
+                <div class="stage-card">
+                    <div class="phone-frame">
+                        <img src="assets/screenshot_4.jpg" alt="Arsenal" class="full-length-media">
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>Arsenal</h3>
+                        <p>Perfect your loadout</p>
+                    </div>
+                </div>
+
+                <!-- 6. Magic -->
+                <div class="stage-card">
+                    <div class="phone-frame">
+                        <img src="assets/screenshot_5.jpg" alt="Magic" class="full-length-media">
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>Magic</h3>
+                        <p>Master arcane sorceries</p>
+                    </div>
+                </div>
+
+                <!-- 7. Talismans -->
+                <div class="stage-card">
+                    <div class="phone-frame">
+                        <img src="assets/screenshot_6.jpg" alt="Talismans" class="full-length-media">
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>Talismans</h3>
+                        <p>Min-max your build</p>
+                    </div>
+                </div>
+
+                 <!-- 8. Lore -->
+                 <div class="stage-card" style="padding-right: 40px;"> <!-- Extra padding at end -->
+                    <div class="phone-frame">
+                        <img src="assets/screenshot_7.jpg" alt="Lore" class="full-length-media">
+                        <div class="frame-glare"></div>
+                    </div>
+                    <div class="stage-info">
+                        <h3>Deep Lore</h3>
+                        <p>Uncover the story</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
