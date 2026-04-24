@@ -94,11 +94,12 @@ h1 {
 /* Dashboard Layout Structure */
 .dashboard-layout {
     display: flex;
+    flex-direction: row-reverse;
     width: 100vw;
     height: 100vh;
 }
 
-/* Left Sidebar */
+/* Right Sidebar */
 .dashboard-sidebar {
     width: 40%;
     height: 100%;
@@ -106,9 +107,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 0 60px;
-    background: linear-gradient(90deg, rgba(2,8,21,1) 0%, rgba(2,8,21,0.8) 100%);
+    background: linear-gradient(270deg, rgba(2,8,21,1) 0%, rgba(2,8,21,0.8) 100%);
     backdrop-filter: blur(20px);
-    border-right: 1px solid rgba(255,255,255,0.05);
+    border-left: 1px solid rgba(255,255,255,0.05);
     z-index: 10;
 }
 
@@ -126,7 +127,8 @@ h1 {
     color: var(--gold);
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .logo-icon {
@@ -359,7 +361,7 @@ h1 {
         width: 100%;
         height: auto;
         padding: 60px 30px;
-        border-right: none;
+        border-left: none;
         border-bottom: 1px solid var(--border-color);
     }
 
